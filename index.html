@@ -1,0 +1,1625 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopper.</title>
+  <link rel="stylesheet" href="bootsrap-files/bootstrap-icons.css">
+  <link rel="stylesheet" href="bootsrap-files/bootstrap.min.css">
+  <script src="bootsrap-files/bootstrap.bundle.js"></script>
+    <style>
+        @media screen and (orientation:landscape) {
+.footer-cols{
+    color: rgb(177, 177, 177);
+    font-size: 14px;
+}
+.footer-cols  div{
+    margin-bottom: 4px;
+}
+.f-menu{
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+    padding-bottom: 14px;
+}
+
+            footer {
+                height: 70vh;
+                background-color: rgb(37, 37, 37);
+                transform: translateY(160px);
+               padding: 70px;
+
+            }
+
+            .f-grid-r-1 {
+                color: white;
+                font-weight: bold;
+                font-size: 26px;
+                padding: 10px;
+            }
+
+            .f-grid-r-2 {
+                color: rgb(137, 136, 136);
+                padding: 10px;
+                font-size: 20px;
+            }
+
+            .f-grid-r-2 span {
+                padding-right: 8px;
+            }
+
+            .footer-grid {
+                width: 90%;
+                margin: auto;
+                height: 50%;
+               
+                margin-top: 60px;
+                display: grid;
+                grid-template-columns: 4fr 2fr 2fr 2fr 2fr;
+            }
+
+         
+
+            .footer-email,
+            .footer-title {
+                text-align: center;
+            }
+
+            .subscribe {
+                background-color: rgba(255, 255, 255, 0.3);
+                border: none;
+                height: 60px;
+                width: 150px;
+                color: white;
+                font-weight: bold;
+                margin-left: 14px;
+
+            }
+
+            .footer-title {
+                color: white;
+                font-weight: 500;
+                font-size: 26px;
+                margin-bottom: 30px;
+            }
+
+            footer input {
+                background-color: rgba(255, 255, 255, 0.1);
+                border: none;
+                height: 60px;
+                width: 360px;
+            }
+
+            footer input::placeholder {
+                padding-left: 30px;
+                color: rgb(182, 182, 182);
+            }
+
+            .row-10 {
+                height: 500px;
+                width: 100%;
+
+                transform: translateY(160px);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .c-title {
+                font-weight: bold;
+            }
+
+            .c-header {
+                display: flex;
+            }
+
+            .row-10 .carousel {
+
+                height: 80%;
+                width: 70%;
+
+            }
+
+            .cards-con {
+
+                display: grid;
+                grid-template-columns: 4fr 4fr 4fr;
+                height: 100%;
+                width: 100%;
+                gap: 40px;
+
+            }
+
+            .cards {
+                padding: 26px;
+                border: 1px solid rgb(208, 207, 207);
+                height: fit-content;
+            }
+
+            .c-header div {
+                padding-right: 18px;
+            }
+
+            .c-body {
+                margin-top: 20px;
+            }
+
+            .row-9 {
+                height: 150px;
+                width: 100%;
+                transform: translateY(160px);
+                text-align: center;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .rw-9-title {
+                font-weight: 500;
+                color: rgb(142, 142, 142);
+
+            }
+
+            .rw-9-s-title {
+                font-size: 36px;
+                font-weight: 500;
+            }
+
+            .offer-time {
+                width: 60%;
+
+                height: 90%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+            }
+
+            .time-con {
+                margin-top: 10px;
+                display: grid;
+                grid-template-columns: repeat(7, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+                width: 440px;
+                height: 100px;
+
+
+            }
+
+            .time-con div {
+
+                text-align: center;
+            }
+
+            .shopnow {
+                background-color: black;
+                padding: 10px;
+                color: white;
+                margin-top: 26px;
+            }
+
+            .dhms {
+                color: white;
+                font-weight: 500;
+            }
+
+            .off {
+                font-size: 30px;
+                color: white;
+                font-weight: bold;
+            }
+
+            .time {
+                font-size: 50px;
+                font-weight: bold;
+                color: rgb(255, 190, 61);
+            }
+
+            .row-8 {
+                height: 500px;
+                background-image: url("shopper-img/cloth-bg.jpg");
+                background-size: cover;
+                transform: translateY(150px);
+                display: flex;
+                align-items: center;
+            }
+
+            .row-7 {
+                height: 100px;
+
+                transform: translateY(150px);
+                display: flex;
+                justify-content: center;
+                align-items: start;
+            }
+
+            .row-7 span {
+                border-bottom: 1px solid black;
+                padding-left: 10px;
+                padding-right: 10px;
+
+            }
+
+            .row-6 {
+                height: fit-content;
+
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+                transform: translateY(100px);
+                width: 80%;
+                gap: 30px;
+                margin: auto;
+            }
+
+            .row-5 {
+                height: 150px;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                transform: translateY(100px);
+            }
+
+            .row-1 {
+                height: 120px;
+
+                width: 80%;
+                margin: auto;
+                display: flex;
+
+                align-items: center;
+                border-bottom: 1px solid gray;
+            }
+
+            .row-1 div {
+
+                width: 100%;
+            }
+
+            .row-1 .nm {
+                transform: translateX(36px);
+                color: rgb(67, 67, 67);
+            }
+
+            .icn {
+                color: red;
+                padding-right: 14px;
+                font-size: 18px;
+            }
+
+            .row-2 {
+                height: fit-content;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding-top: 80px;
+                margin-bottom: 40px;
+            }
+
+            .row-2-title {
+                text-transform: uppercase;
+                font-size: 14px;
+                font-weight: 500;
+                color: gray;
+            }
+
+            .row-2-sub-title {
+                font-size: 40px;
+                font-weight: bold;
+            }
+
+            .row-2 div {
+                margin-top: 10px;
+            }
+
+            .row-3 {
+                height: 400px;
+                margin: auto;
+                width: 80%;
+
+                display: grid;
+                grid-template-columns: 4fr 8fr;
+
+                gap: 30px;
+            }
+
+            .row-4 {
+                height: 400px;
+                margin: auto;
+                width: 80%;
+                transform: translateY(40px);
+                display: grid;
+                grid-template-columns: 8fr 4fr;
+
+                gap: 30px;
+            }
+
+            .bags {
+                background-image: url("shopper-img/portrait-positive-woman-high-spirits-posing-red-wall-dark-haired-lady-bright-summer-outfit-holding-beach-bag.jpg");
+                background-size: cover;
+                background-position: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+               
+                color: white;
+                font-weight: bold;
+                font-size: 30px; 
+                overflow: hidden;
+            }
+         
+            .printed-shirt {
+                background-image: url("shopper-img/printed-shirt.jpg");
+                background-position: center;
+                background-size: cover;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 0px 0px 0px 50px;
+                color: white;
+                font-weight: bold;
+                font-size: 30px;
+                position: relative;
+            }
+
+            .offer {
+                position: absolute;
+                right: 40px;
+                top: 20px;
+                background-color: tomato;
+                height: 100px;
+                width: 100px;
+                border-radius: 100px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .save {
+                font-size: 15px;
+            }
+
+            .per {
+                font-size: 24px;
+
+            }
+
+            .basic-dress {
+                background-image: url("shopper-img/basic-dress.jpg");
+                background-position: center;
+                background-size: cover;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 0px 0px 0px 50px;
+                color: white;
+                font-weight: bold;
+                font-size: 30px;
+            }
+
+            .sweatdress {
+                background-image: url("shopper-img/sweatshirt.jpg");
+                background-position: center;
+                background-size: cover;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 0px 0px 0px 50px;
+
+                font-weight: bold;
+                font-size: 30px;
+            }
+
+            .sweatdress div {
+                background-color: rgba(255, 255, 255, 0.3);
+                padding: 4px;
+                width: fit-content;
+            }
+
+
+
+
+            #carousel {
+                display: none;
+            }
+
+            header {
+                height: 80px;
+
+
+            }
+
+            nav {
+                display: flex;
+                justify-content: space-around;
+                height: 100%;
+                align-items: center;
+
+            }
+
+            .brand-title {
+                font-size: 26px;
+                font-weight: bold;
+            }
+
+            .menu span {
+                padding: 0px 10px 0px 10px;
+                font-weight: 500;
+            }
+
+            .icons span {
+                padding: 0px 7px 0px 7px;
+            }
+
+            .btn-justify {
+                font-size: 30px;
+                display: none;
+            }
+
+            main {
+                height: 70vh;
+
+                display: grid;
+                grid-template-columns: 4fr 4fr 4fr;
+            }
+
+            .grid-item {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .title-btn-grid:hover {
+                background-color: rgba(0, 0, 0, 0.4);
+                transition-duration: 0.4;
+            }
+
+            .women-img {
+                width: 100%;
+                height: 100%;
+                background-image: url("shopper-img/woman-wearing-yellow-tshirt-mockup_1079878-854.jpg");
+                background-size: cover;
+                background-position: center;
+
+            }
+
+            .men-img {
+                width: 100%;
+                height: 100%;
+                background-image: url("shopper-img/handsome-guy-beige-jacket-dark-pants-smiling-orange-background.jpg");
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+
+            .kid-img {
+                width: 100%;
+                height: 100%;
+                background-image: url("shopper-img/kid-fasion.jpg");
+                background-size: cover;
+                background-position: center;
+
+            }
+
+            .title-btn-grid {
+                width: 100%;
+                height: 100%;
+
+                display: grid;
+                grid-template-rows: 4fr 5fr 3fr;
+                text-align: center;
+                background-color: rgba(0, 0, 0, 0.2);
+            }
+
+            .grid-titles {
+                font-size: 40px;
+                color: white;
+                font-weight: 500;
+            }
+
+            .btn-shop {
+                border-radius: unset;
+                padding: 8px 20px 8px 20px;
+            }
+        }
+
+        @media screen and (orientation:portrait) {
+
+.footer-email{
+    display: flex;
+    justify-content: space-between;
+}
+            .footer-cols{
+    color: rgb(177, 177, 177);
+    font-size: 14px;
+}
+.footer-cols  div{
+    margin-bottom: 4px;
+}
+.f-menu{
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+    padding-bottom: 14px;
+}
+
+            footer {
+                height: fit-content;
+                background-color: rgb(37, 37, 37);
+                transform: translateY(200px);
+               padding: 70px;
+             
+
+            }
+
+            .f-grid-r-1 {
+                color: white;
+                font-weight: bold;
+                font-size: 26px;
+                padding: 10px;
+            }
+
+            .f-grid-r-2 {
+                color: rgb(137, 136, 136);
+                padding: 10px;
+                font-size: 20px;
+            }
+
+            .f-grid-r-2 span {
+                padding-right: 8px;
+            }
+
+            .footer-grid {
+                width: 90%;
+                margin: auto;
+                height: 50%;
+               
+                margin-top: 60px;
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                grid-template-rows: repeat(3,1fr);
+                gap: 40px;
+            }
+
+         
+
+            .footer-email,
+            .footer-title {
+                text-align: center;
+            }
+
+            .subscribe {
+                background-color: rgba(255, 255, 255, 0.3);
+                border: none;
+                height: 60px;
+                width: 150px;
+                color: white;
+                font-weight: bold;
+                margin-left: 14px;
+
+            }
+
+            .footer-title {
+                color: white;
+                font-weight: 500;
+                font-size: 26px;
+                margin-bottom: 30px;
+            }
+
+            footer input {
+                background-color: rgba(255, 255, 255, 0.1);
+                border: none;
+                height: 60px;
+                width: 360px;
+            }
+
+            footer input::placeholder {
+                padding-left: 30px;
+                color: rgb(182, 182, 182);
+            }
+
+.hide{
+    display: none;
+}
+
+
+
+
+
+            .row-9 {
+                height: 150px;
+                width: 100%;
+                transform: translateY(160px);
+                text-align: center;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .rw-9-title {
+                font-weight: 500;
+                color: rgb(142, 142, 142);
+
+            }
+
+            .rw-9-s-title {
+                font-size: 36px;
+                font-weight: 500;
+            }
+
+            .row-10 {
+                height: 500px;
+                width: 100%;
+
+                transform: translateY(180px);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .c-title {
+                font-weight: bold;
+            }
+
+            .c-header {
+                display: flex;
+            }
+
+            .row-10 .carousel {
+
+                height: 80%;
+                width: 70%;
+
+            }
+
+            .cards-con {
+
+                display: grid;
+                grid-template-columns: 12fr;
+                height:fit-content;
+                width: 100%;
+                gap: 40px;
+              
+
+            }
+
+            .cards {
+                padding: 26px;
+                border: 1px solid rgb(208, 207, 207);
+                height: fit-content;
+                
+            }
+
+            .c-header div {
+                padding-right: 18px;
+            }
+
+            .c-body {
+                margin-top: 20px;
+            }
+
+
+            .offer-time {
+                width: 100%;
+                padding-left: 46px;
+                height: 90%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+            }
+
+            .time-con {
+                margin-top: 10px;
+                display: grid;
+                grid-template-columns: repeat(7, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+                width: 350px;
+                height: 100px;
+
+
+            }
+
+            .time-con div {
+
+                text-align: center;
+            }
+
+            .shopnow {
+                background-color: black;
+                padding: 10px;
+                color: white;
+                margin-top: 26px;
+            }
+
+            .dhms {
+                color: white;
+                font-weight: 500;
+            }
+
+            .off {
+                font-size: 30px;
+                color: white;
+                font-weight: bold;
+            }
+
+            .time {
+                font-size: 30px;
+                font-weight: bold;
+                color: rgb(255, 190, 61);
+            }
+
+            .row-8 {
+                height: 500px;
+                background-image: url("shopper-img/cloth-bg.jpg");
+                background-size: cover;
+                transform: translateY(150px);
+
+                display: flex;
+                align-items: center;
+            }
+
+            .row-7 {
+                height: 100px;
+
+                transform: translateY(150px);
+                display: flex;
+                justify-content: center;
+                align-items: start;
+            }
+
+            .row-7 span {
+                border-bottom: 1px solid black;
+                padding-left: 10px;
+                padding-right: 10px;
+
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            .row-5 {
+                height: 150px;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                transform: translateY(100px);
+            }
+
+            .row-6 {
+                height: fit-content;
+
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(4, 1fr);
+                transform: translateY(100px);
+                width: 80%;
+                gap: 30px;
+                margin: auto;
+            }
+
+
+
+            .row-2 {
+                height: fit-content;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 80px 10px 0px 10px;
+                margin-bottom: 40px;
+
+            }
+
+            .row-2-title {
+                text-transform: uppercase;
+                font-size: 14px;
+                font-weight: 500;
+                color: gray;
+            }
+
+            .row-2-sub-title {
+                font-size: 40px;
+                font-weight: bold;
+            }
+
+            .row-2 div {
+                margin-top: 10px;
+            }
+
+            .row-3 {
+                height: 400px;
+                margin: auto;
+                width: 80%;
+
+                display: grid;
+                grid-template-columns: 12fr;
+
+                gap: 30px;
+            }
+
+            .row-4 {
+                height: 400px;
+                margin: auto;
+                width: 80%;
+                transform: translateY(40px);
+                display: grid;
+                grid-template-columns: 12fr;
+
+                gap: 30px;
+            }
+
+            .bags {
+                background-image: url("shopper-img/portrait-positive-woman-high-spirits-posing-red-wall-dark-haired-lady-bright-summer-outfit-holding-beach-bag.jpg");
+                background-size: cover;
+                background-position: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                font-weight: bold;
+                font-size: 30px;
+            }
+
+            .printed-shirt {
+                background-image: url("shopper-img/printed-shirt.jpg");
+                background-position: center;
+                background-size: cover;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 0px 0px 0px 50px;
+                color: white;
+                font-weight: bold;
+                font-size: 30px;
+                position: relative;
+            }
+
+            .offer {
+                position: absolute;
+                right: 10px;
+                top: 3px;
+                background-color: tomato;
+                height: 40px;
+                width: 40px;
+                border-radius: 100px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .save {
+                font-size: 6px;
+            }
+
+            .per {
+                font-size: 10px;
+
+            }
+
+            .basic-dress {
+                background-image: url("shopper-img/basic-dress.jpg");
+                background-position: center;
+                background-size: cover;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 0px 0px 0px 50px;
+                color: white;
+                font-weight: bold;
+                font-size: 30px;
+            }
+
+            .sweatdress {
+                background-image: url("shopper-img/sweatshirt.jpg");
+                background-position: center;
+                background-size: cover;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 0px 0px 0px 50px;
+
+                font-weight: bold;
+                font-size: 30px;
+            }
+
+            .sweatdress div {
+                background-color: rgba(255, 255, 255, 0.3);
+                padding: 4px;
+                width: fit-content;
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            .row-1 {
+                height: fit-content;
+
+
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                border-bottom: 1px solid gray;
+                padding: 10px 0px 40px 40px;
+            }
+
+            .row-1 div {
+
+                width: 100%;
+                margin-top: 10px;
+            }
+
+            .row-1 .nm {
+                transform: translateX(36px);
+                color: rgb(67, 67, 67);
+            }
+
+            .icn {
+                color: red;
+                padding-right: 14px;
+                font-size: 18px;
+            }
+
+
+
+
+            .menu,
+            .icons {
+                display: none;
+            }
+
+            .btn-justify {
+                display: inline;
+                font-size: 36px;
+
+            }
+
+            .btn-justify button {
+                background-color: transparent;
+                border: none;
+            }
+
+            nav {
+                display: flex;
+                justify-content: space-between;
+                padding: 16px;
+            }
+
+            .brand-title {
+                font-size: 30px;
+                font-weight: bold;
+
+            }
+
+
+            main {
+                display: grid;
+                grid-template-columns: 12fr;
+                height: 80vh;
+                overflow: hidden;
+
+
+
+            }
+
+            .carousel-inner {
+
+                height: 100%;
+            }
+
+            .men-img,
+            .kid-img,
+            .women-img {
+                display: none;
+            }
+
+
+            .title-btn-grid {
+
+                height: 100%;
+                display: grid;
+                grid-template-rows: 4fr 5fr 3fr;
+                text-align: center;
+                background-color: rgba(0, 0, 0, 0.2);
+
+            }
+
+            .grid-titles {
+                font-size: 40px;
+                color: white;
+                font-weight: 500;
+            }
+
+            .btn-shop {
+                border-radius: unset;
+                padding: 8px 20px 8px 20px;
+            }
+
+            .carousel-item {
+                position: relative;
+            }
+
+            .grid-item {
+                position: absolute;
+                top: 0px;
+                width: 100%;
+                height: 100%;
+            }
+
+        }
+
+        #menubar {
+            width: 55%;
+        }
+
+        .offcanvas-body ul {
+            flex-direction: column;
+        }
+
+        .offcanvas-body ul li {
+            list-style: none;
+            font-weight: 500;
+        }
+
+        article {
+            height: 50px;
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        article span {
+            padding: 0px 8px 0px 8px;
+            text-transform: uppercase;
+        }
+
+        .bi-lightning-fill {
+            color: orange;
+        }
+
+        .new {
+            position: absolute;
+            background-color: white;
+            padding: 2px 10px 0px 10px;
+            font-size: 10px;
+            font-weight: 500;
+            top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="brand-title"><span>Shopper.</span></div>
+            <div class="menu">
+                <span>Home</span>
+                <span>Catalog</span>
+                <span>Shop</span>
+                <span>Pages</span>
+                <span>Blog</span>
+                <span>Docs</span>
+            </div>
+            <div class="icons">
+                <span class="bi bi-search"></span>
+                <span class="bi bi-person-fill"></span>
+                <span class="bi bi-heart"></span>
+                <span class="bi bi-cart"></span>
+            </div>
+            <div class="btn-justify">
+                <button class="bi bi-justify" data-bs-target="#menubar" data-bs-toggle="offcanvas"></button>
+            </div>
+        </nav>
+    </header>
+    <article> <span class="bi bi-lightning-fill"></span><span> Happy Holiday Deals on Everything</span><span
+            class="bi bi-lightning-fill"></span></article>
+    <main>
+
+        <div class="carousel slide w-100" data-bs-ride="carousel" id="carousel" data-bs-pause="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active ">
+                    <img src="shopper-img/dress-studio-fashion-model-beautiful.jpg" alt="" class="w-100">
+                    <div class="grid-item">
+
+                        <div class="title-btn-grid">
+
+                            <div></div>
+                            <div class="grid-titles"><span>Women</span></div>
+                            <div><button class="btn btn-light btn-shop">Shop Women <span
+                                        class="bi bi-arrow-right"></span></button> </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <img src="shopper-img/always-perfect-casual-guy-posing-against-white-wall_425904-7836.jpg"
+                        alt="" class="w-100">
+                    <div class="grid-item">
+
+                        <div class="title-btn-grid">
+
+                            <div></div>
+                            <div class="grid-titles"><span>Men</span></div>
+                            <div><button class="btn btn-light btn-shop">Shop Men <span
+                                        class="bi bi-arrow-right"></span></button> </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <img src="shopper-img/kid-fasion.jpg" alt="" class="w-100">
+                    <div class="grid-item">
+
+                        <div class="title-btn-grid">
+
+                            <div></div>
+                            <div class="grid-titles"><span>Kids</span></div>
+                            <div><button class="btn btn-light btn-shop">Shop Kids <span
+                                        class="bi bi-arrow-right"></span></button> </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item  women-img">
+
+            <div class="title-btn-grid">
+
+                <div></div>
+                <div class="grid-titles"><span>Women</span></div>
+                <div><button class="btn btn-light btn-shop">Shop Women <span class="bi bi-arrow-right"></span></button>
+                </div>
+            </div>
+
+        </div>
+        <div class="grid-item men-img">
+            <div class="title-btn-grid">
+
+                <div></div>
+                <div class="grid-titles"><span>Men </span></div>
+                <div><button class="btn btn-light btn-shop">Shop men <span class="bi bi-arrow-right"></span></button>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item  kid-img">
+            <div class="title-btn-grid">
+                <div></div>
+                <div class="grid-titles"><span>Kids </span></div>
+                <div><button class="btn btn-light btn-shop">Shop kid <span class="bi bi-arrow-right"></span></button>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+    <div class="row-1">
+        <div>
+            <div> <span class="bi bi-truck icn"></span> <span class="fw-bold ">FREE SHIPPING</span></div>
+            <div class="nm"><span>From all orders over $100</span></div>
+        </div>
+        <div>
+            <div> <span class="bi bi-repeat icn"></span> <span class="fw-bold">FREE RETURNS</span></div>
+            <div class="nm"><span>Return money within 30 days</span></div>
+        </div>
+        <div>
+            <div> <span class="bi bi-lock icn"></span> <span class="fw-bold">SECURE SHIPPING</span></div>
+            <div class="nm"><span>You're in safe hands</span></div>
+        </div>
+        <div>
+            <div> <span class="bi bi-tag icn"></span> <span class="fw-bold">OVER 10,000 STYLES</span></div>
+            <div class="nm"><span>We have everything you need</span></div>
+        </div>
+    </div>
+    <div class="row-2">
+        <div class="row-2-title"><span>New Collection</span></div>
+        <div class="row-2-sub-title"><span>Best Picks 2019</span></div>
+        <div class="row-2-para" style="text-align: center;"><span>Appear, dry there darkness they're seas, dry waters
+                thing fly midst. Beast, <br> above fly brought Very green.</span></div>
+    </div>
+    <div class="row-3">
+        <div class="bags">
+            
+                <div class="collection-title"><span>Bags Collection</span></div>
+                <div style="display: flex;align-items: center;" class="collection-now"> <span class="fs-6 me-2">SHOP NOW</span><span
+                        class="bi bi-arrow-right"></span></div>
+            
+           
+        </div>
+        <div class="printed-shirt">
+            <div><span>Printed Men's Shirt</span></div>
+            <div style="display: flex;align-items: center;"> <span class="fs-6 me-2">SHOP NOW</span><span
+                    class="bi bi-arrow-right"></span></div>
+            <div class="offer">
+                <div class="save"><span>SAVE</span></div>
+                <div class="per">30%</div>
+            </div>
+        </div>
+
+    </div>
+    <div class="row-4">
+        <div class="basic-dress">
+            <div><span>Basic Women's Dress</span></div>
+            <div style="display: flex;align-items: center;"> <span class="fs-6 me-2">SHOP NOW</span><span
+                    class="bi bi-arrow-right"></span></div>
+        </div>
+        <div class="sweatdress">
+            <div class="px-4"><span>Sweatshirt</span></div>
+            <div class="px-4" style="display: flex;align-items: center;"> <span class="fs-6 me-2">SHOP NOW</span><span
+                    class="bi bi-arrow-right"></span></div>
+        </div>
+    </div>
+    <div class="row-5">
+        <div class=" mb-4"><span class="fw-bold fs-1">Top month Sellers</span></div>
+        <div> <span class="px-4">Women</span> <span>Men</span> <span class="px-4">Kids</span></div>
+    </div>
+    <div class="row-6">
+
+
+        <div class="card-body" style="position: relative;">
+            <span class="new">NEW</span>
+            <img src="shopper-img/sandle.jpg" alt="" width="100%" class="mb-4">
+            <div>Shoes </div>
+            <div class="fw-bold"> Leather mid-heel Sandals</div>
+            <div>$129.00</div>
+        </div>
+
+
+
+
+        <div>
+            <span class="new">NEW</span>
+            <img src="shopper-img/drs.jpg" alt="" width="100%" class="mb-4">
+            <div> Dresses </div>
+            <div class="fw-bold"> Cotton floral print Dress</div>
+            <div> $40.00</div>
+        </div>
+        <div>
+            <span class="new">NEW</span>
+            <img src="shopper-img/shoes.jpg" alt="" width="100%" class="mb-4">
+            <div> Shoes </div>
+            <div class="fw-bold"> Leather Sneakers</div>
+            <div> $40.00</div>
+        </div>
+        <div>
+            <span class="new">NEW</span>
+            <img src="shopper-img/tops.jpg" alt="" width="100%" class="mb-4">
+            <div> Tops </div>
+            <div class="fw-bold">Cropped cotton Top</div>
+            <div> $40.00</div>
+        </div>
+        <div>
+            <span class="new">NEW</span>
+            <img src="shopper-img/prt-women.jpg" alt="" width="100%" class="mb-4">
+            <div> Dresses </div>
+            <div class="fw-bold">Floral print midi Dress</div>
+            <div> $40.00</div>
+        </div>
+        <div>
+            <span class="new">NEW</span>
+            <img src="shopper-img/bag.jpg" alt="" width="100%" class="mb-4">
+            <div> Bags </div>
+            <div class="fw-bold">Suede cross body Bag</div>
+            <div> $40.00</div>
+        </div>
+        <div>
+            <span class="new">NEW</span>
+            <img src="shopper-img/skirt.jpg" alt="" width="100%" class="mb-4">
+            <div> Skirt </div>
+            <div class="fw-bold">Printed A-line Skirt</div>
+            <div> $40.00</div>
+        </div>
+        <div>
+            <span class="new">NEW</span>
+            <img src="shopper-img/heel.jpg" alt="" width="100%" class="mb-4">
+            <div> Heels </div>
+            <div class="fw-bold">Heel strappy Sandals</div>
+            <div> $40.00</div>
+        </div>
+    </div>
+    <div class="row-7">
+        <span>Discover more</span>
+    </div>
+    <div class="row-8">
+        <div class=" offer-time">
+            <div class="off"> <span>Get -50% from <br>
+                    Summer Collection</span></div>
+            <div class="time-con ">
+
+                <div class="time">482</div>
+                <div class="time">:</div>
+                <div class="time">11</div>
+                <div class="time">:</div>
+                <div class="time">38</div>
+                <div class="time">:</div>
+                <div class="time">41</div>
+                <div class="dhms">DAYS</div>
+                <div></div>
+                <div class="dhms">HOURS</div>
+                <div></div>
+                <div class="dhms">MINUTES</div>
+                <div></div>
+                <div class="dhms">SECONDS</div>
+            </div>
+
+            <div class="shopnow"> <span>SHOP NOW <span class="bi bi-arrow-right"></span></span></div>
+        </div>
+    </div>
+
+    <div class="row-9">
+        <div class="rw-9-title">WHAT BUYERS SAY</div>
+        <div class="rw-9-s-title">Latest buyers Reviews</div>
+    </div>
+    <div class="row-10">
+        <div class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="cards-con">
+                        <div class="cards">
+                            <div class="c-header">
+                                <div><img src="shopper-img/shoes.jpg" alt="" width="80px" height="80px"></div>
+                                <div>
+                                    <div>Shoes</div>
+                                    <div class="py-1 c-title">Low top Sneakers</div>
+                                    <div><span class="bi bi-star-fill" style="color: orange;"></span><span
+                                            class="bi bi-star-fill" style="color: orange;"></span><span
+                                            class="bi bi-star-fill" style="color: orange;"></span><span
+                                            class="bi bi-star-fill" style="color: rgb(198, 198, 198)"></span><span
+                                            class="bi bi-star-fill " style="color: rgb(198, 198, 198)"></span></div>
+                                </div>
+                            </div>
+                            <div class="c-body">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi commodi repellat sit
+                                    voluptatibus. Cupiditate nisi voluptatibus fugit unde aliquam nemo repellat
+                                    voluptatem,
+                                    commodi omnis, ducimus recusandae eaque quisquam earum natus.</p>
+                            </div>
+                            <div class="c-footer">
+                                Logan Edwards, 01 JUN 2019
+                            </div>
+                        </div>
+                        <div class="cards hide">
+                            <div class="c-header">
+                                <div><img src="shopper-img/skirt.jpg" alt="" width="80px" height="80px"></div>
+                                <div>
+                                    <div>Dresses</div>
+                                    <div class="py-1 c-title">Cotton Print Dress</div>
+                                    <div><span class="bi bi-star-fill" style="color: orange;"></span><span
+                                            class="bi bi-star-fill" style="color: orange;"></span><span
+                                            class="bi bi-star-fill" style="color: orange;"></span><span
+                                            class="bi bi-star-fill" style="color: rgb(198, 198, 198)"></span><span
+                                            class="bi bi-star-fill " style="color: rgb(198, 198, 198)"></span></div>
+                                </div>
+                            </div>
+                            <div class="c-body">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi commodi repellat sit
+                                    voluptatibus. Cupiditate nisi voluptatibus fugit unde aliquam nemo repellat
+                                    voluptatem,
+                                    commodi omnis, ducimus recusandae eaque quisquam earum natus.</p>
+                            </div>
+                            <div class="c-footer">
+                                Logan Edwards, 01 JUN 2019
+                            </div>
+                        </div>
+                        <div class="cards hide">
+                            <div class="c-header">
+                                <div><img src="shopper-img/printed-shirt.jpg" alt="" width="80px" height="80px">
+                                </div>
+                                <div>
+                                    <div>Shirts</div>
+                                    <div class="py-1 c-title"> Printed Shirts</div>
+                                    <div><span class="bi bi-star-fill" style="color: orange;"></span><span
+                                            class="bi bi-star-fill" style="color: orange;"></span><span
+                                            class="bi bi-star-fill" style="color: orange;"></span><span
+                                            class="bi bi-star-fill" style="color: rgb(198, 198, 198)"></span><span
+                                            class="bi bi-star-fill " style="color: rgb(198, 198, 198)"></span></div>
+                                </div>
+                            </div>
+                            <div class="c-body">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi commodi repellat sit
+                                    voluptatibus. Cupiditate nisi voluptatibus fugit unde aliquam nemo repellat
+                                    voluptatem,
+                                    commodi omnis, ducimus recusandae eaque quisquam earum natus.</p>
+                            </div>
+                            <div class="c-footer">
+                                Logan Edwards, 01 JUN 2019
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="cards-con">
+
+                        <div class="cards">
+                            <div class="c-header">
+                                <div><img src="shopper-img/skirt.jpg" alt="" width="80px" height="80px"></div>
+                                <div>
+                                    <div>Dresses</div>
+                                    <div class="py-1 c-title">Cotton Print Dress</div>
+                                    <div><span class="bi bi-star-fill" style="color: orange;"></span><span
+                                            class="bi bi-star-fill" style="color: orange;"></span><span
+                                            class="bi bi-star-fill" style="color: orange;"></span><span
+                                            class="bi bi-star-fill" style="color: rgb(198, 198, 198)"></span><span
+                                            class="bi bi-star-fill " style="color: rgb(198, 198, 198)"></span></div>
+                                </div>
+                            </div>
+                            <div class="c-body">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi commodi repellat sit
+                                    voluptatibus. Cupiditate nisi voluptatibus fugit unde aliquam nemo repellat
+                                    voluptatem,
+                                    commodi omnis, ducimus recusandae eaque quisquam earum natus.</p>
+                            </div>
+                            <div class="c-footer">
+                                Logan Edwards, 01 JUN 2019
+                            </div>
+                        </div>
+                        <div class="cards hide">
+                            <div class="c-header">
+                                <div><img src="shopper-img/printed-shirt.jpg" alt="" width="80px" height="80px">
+                                </div>
+                                <div>
+                                    <div>Shirts</div>
+                                    <div class="py-1 c-title"> Printed Shirts</div>
+                                    <div><span class="bi bi-star-fill" style="color: orange;"></span><span
+                                            class="bi bi-star-fill" style="color: orange;"></span><span
+                                            class="bi bi-star-fill" style="color: orange;"></span><span
+                                            class="bi bi-star-fill" style="color: rgb(198, 198, 198)"></span><span
+                                            class="bi bi-star-fill " style="color: rgb(198, 198, 198)"></span></div>
+                                </div>
+                            </div>
+                            <div class="c-body">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi commodi repellat sit
+                                    voluptatibus. Cupiditate nisi voluptatibus fugit unde aliquam nemo repellat
+                                    voluptatem,
+                                    commodi omnis, ducimus recusandae eaque quisquam earum natus.</p>
+                            </div>
+                            <div class="c-footer">
+                                Logan Edwards, 01 JUN 2019
+                            </div>
+                        </div>
+                        <div class="cards hide">
+                            <div class="c-header">
+                                <div><img src="shopper-img/shoes.jpg" alt="" width="80px" height="80px"></div>
+                                <div>
+                                    <div>Shoes</div>
+                                    <div class="py-1 c-title">Low top Sneakers</div>
+                                    <div><span class="bi bi-star-fill" style="color: orange;"></span><span
+                                            class="bi bi-star-fill" style="color: orange;"></span><span
+                                            class="bi bi-star-fill" style="color: orange;"></span><span
+                                            class="bi bi-star-fill" style="color: rgb(198, 198, 198)"></span><span
+                                            class="bi bi-star-fill " style="color: rgb(198, 198, 198)"></span></div>
+                                </div>
+                            </div>
+                            <div class="c-body">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi commodi repellat sit
+                                    voluptatibus. Cupiditate nisi voluptatibus fugit unde aliquam nemo repellat
+                                    voluptatem,
+                                    commodi omnis, ducimus recusandae eaque quisquam earum natus.</p>
+                            </div>
+                            <div class="c-footer">
+                                Logan Edwards, 01 JUN 2019
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-title">Want style Ideas and Treats?</div>
+        <div class="footer-email"> <input type="email" placeholder="Enter Email *"> <button
+                class=" subscribe">SUBSCRIBE</button></div>
+
+        <div class="footer-grid">
+            <div>
+                <div class="f-grid-r-1">Shopper.</div>
+                <div class="f-grid-r-2"><span class="bi bi-facebook"></span> <span class="bi bi-twitter"></span> <span
+                        class="bi bi-instagram"></span> <span class="bi bi-youtube"></span></div>
+            </div>
+            <div class="footer-cols">
+                <div class="f-menu">SUPPORT</div>
+                <div>Contact Us</div>
+                <div>FAQs</div>
+                <div>Size Guide</div>
+                <div>Shipping & Returns</div>
+            </div>
+
+            <div  class="footer-cols">
+                <div class="f-menu">SHOP</div>
+                <div>Men's Shopping</div>
+                <div>Women's Shopping</div>
+                <div>Kids' Shopping</div>
+                <div>Discounts</div>
+            </div>
+            <div  class="footer-cols">
+
+                <div class="f-menu">COMPANY</div>
+                <div>Our Story</div>
+                <div>Careers</div>
+                <div>Terms & Conditions</div>
+                <div>Privacy & Cookie policy</div>
+            </div>
+            <div  class="footer-cols">
+                <div class="f-menu">CONTACT</div>
+                <div>1-202-555-0105</div>
+                <div>1-202-555-0106</div>
+                <div>help@shopper.com</div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="offcanvas offcanvas-end " id="menubar">
+        <div class="offcanvas-header">
+            <h1 class="fw-bold fs-3">Shopper.</h1>
+            <button class="btn btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="d-flex ">
+                <li class="py-2">Home</li>
+                <li class="py-2">Catalog</li>
+                <li class="py-2">Shop</li>
+                <li class="py-2">Pages</li>
+                <li class="py-2">Blog</li>
+                <li class="py-2">Docs</li>
+
+
+            </ul>
+            <div style="text-align: start;" class="ps-4">
+                <span class="bi bi-search px-2"></span>
+                <span class="bi bi-person-fill"></span>
+                <span class="bi bi-heart px-2"></span>
+                <span class="bi bi-cart"></span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
